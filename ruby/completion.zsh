@@ -5,6 +5,8 @@ if [[ ! -o interactive ]]; then
     return
 fi
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+  
 compctl -K _rbenv rbenv
 
 _rbenv() {
