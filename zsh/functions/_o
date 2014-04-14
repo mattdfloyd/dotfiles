@@ -1,2 +1,0 @@
-#compdef o
-_files -W ./ -/

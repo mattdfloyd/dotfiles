@@ -15,7 +15,7 @@
 #   # => opens the specified directory in your editor
 
 if [ "$1" == "" ] ; then
-  $EDITOR .
+  e && gittower .
 else
-  $EDITOR "$1"
+  e "$1" && gittower "$1"
 fi
