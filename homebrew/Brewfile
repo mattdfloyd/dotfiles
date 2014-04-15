@@ -1,0 +1,17 @@
+update
+upgrade
+
+install grc
+install coreutils
+install findutils
+
+install wget --enable-iri
+install homebrew/dupes/grep
+install ack
+
+install git
+install node
+install rbenv
+install ruby-build
+
+install imagemagick
