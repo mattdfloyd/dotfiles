@@ -13,7 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew bundle $ZSH/homebrew/Brewfile
-brew bundle $ZSH/homebrew/Caskfile
+brew bundle $ZSH/homebrew/Brewfile > /tmp/brewfile-install.log
+brew bundle $ZSH/homebrew/Caskfile > /tmp/caskfile-install.log
 
 exit 0

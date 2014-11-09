@@ -1,9 +1,9 @@
 # TODO: Explain what some of this does..
 
-bindkey -e
-bindkey '\ew' kill-region
-bindkey -s '\el' "ls\n"
-bindkey '^r' history-incremental-search-backward
+bindkey -e      # Use emacs key bindings
+bindkey '\ew' kill-region       # [Esc-w] - Kill from the cursor to the mark
+bindkey -s '\el' "ls\n"         # [Esc-l] - run command: ls
+bindkey '^r' history-incremental-search-backward        # [Ctrl-r] - Search backward incrementally for a specified string. The string may begin with ^ to anchor the search to the beginning of the line.
 bindkey "^[[5~" up-line-or-history
 bindkey "^[[6~" down-line-or-history
 

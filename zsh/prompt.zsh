@@ -56,6 +56,11 @@ ruby_version() {
   then
     echo "$(rvm-prompt | awk '{print $1}')"
   fi
+
+  if (( $+commands[chruby] ))
+  then
+    echo "$(ruby --version | awk '{print $1}')"
+  fi
 }
 
 rb_prompt() {
